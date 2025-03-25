@@ -1,65 +1,64 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Mirrored from topwebs.websitelayout.net/blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 10:06:24 GMT -->
   <head>
     <!-- metas -->
     <meta charset="utf-8" />
     <meta name="author" content="Website Design Templates" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="keywords" content="Web Design Agency HTML Template" />
-    <meta name="description" content="Topweb - Web Design Agency HTML Template" />
+    <meta name="keywords" content="Hifi Technology Solutions" />
+    <meta name="description" content="Here at Hifi Technology Solutions, we offer web and mobile development solutions..." />
 
     <!-- title -->
-    <title>Topweb - Web Design Agency HTML Template</title>
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="https://topwebs.websitelayout.net/img/logos/favicon.png" />
-    <link rel="apple-touch-icon" href="https://topwebs.websitelayout.net/img/logos/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="https://topwebs.websitelayout.net/img/logos/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="https://topwebs.websitelayout.net/img/logos/apple-touch-icon-114x114.png" />
+    <link rel="shortcut icon" href="{% static 'img/logos/favicon.png' %}" />
+    <link rel="apple-touch-icon" href="{% static 'img/logos/apple-touch-icon-57x57.png' %}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/logos/apple-touch-icon-72x72.png' %}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/logos/apple-touch-icon-114x114.png' %}" />
 
     <!-- plugins -->
-    <link rel="stylesheet" href="https://topwebs.websitelayout.net/css/plugins.css" />
+    <link rel="stylesheet" href="{% static 'css/plugins.css' %}" />
 
     <!-- quform css -->
-    <link rel="stylesheet" href="https://topwebs.websitelayout.net/quform/css/base.css" />
+    <link rel="stylesheet" href="{% static 'quform/css/base.css' %}" />
 
     <!-- theme core css -->
-    <link href="https://topwebs.websitelayout.net/css/styles.css" rel="stylesheet" />
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-      </head>
-      <body>
-        <!-- jQuery -->
-        <script src="https://topwebs.websitelayout.net/js/jquery.min.js"></script>
-
-        <!-- popper js -->
-        <script src="https://topwebs.websitelayout.net/js/popper.min.js"></script>
-
-        <!-- bootstrap -->
-        <script src="https://topwebs.websitelayout.net/js/bootstrap.min.js"></script>
-
-        <!-- jquery -->
-        <script src="https://topwebs.websitelayout.net/js/core.min.js"></script>
-
-        <!-- custom scripts -->
-        <script src="https://topwebs.websitelayout.net/js/main.js"></script>
-
-        <!-- form plugins js -->
-        <script src="https://topwebs.websitelayout.net/quform/js/plugins.js"></script>
-
-        <!-- form scripts js -->
-        <script src="https://topwebs.websitelayout.net/quform/js/scripts.js"></script>
-
-        <!-- all js include end -->
-      </body>
-
-      <!-- Mirrored from topwebs.websitelayout.net/blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Mar 2025 10:06:24 GMT -->
-    </html>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
   </head>
+  <body>
+    <!-- all js include start -->
+    {% block content %}
+
+    {% endblock %}
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+    <!-- popper js -->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <!-- bootstrap -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- jquery -->
+    <script src="{% static 'js/core.min.js' %}"></script>
+
+    <!-- custom scripts -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- form plugins js -->
+    <script src="{% static 'quform/js/plugins.js' %}"></script>
+
+    <!-- form scripts js -->
+    <script src="{% static 'quform/js/scripts.js' %}"></script>
+
+    <!-- all js include end -->
+  </body>
 </html>
