@@ -1,4 +1,6 @@
 .venv
 migrations
 db.sqlite3
-__pycache__
+blog/__pycache__
+web/__pycache__
+hifitechsolns/__pycache__
