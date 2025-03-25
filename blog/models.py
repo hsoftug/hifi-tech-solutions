@@ -8,7 +8,7 @@ class Tag(models.Model):
 class Category(models.Model): 
     name = models.CharField(max_length=255)
 
-class Blog(models.Model): 
+class BlogPost(models.Model): 
     tag = models.ForeignKey(Tag, on_delete=models.DO_NOTHING, null=True)
     category = models.ForeignKey(Category, on_delete=models.DO_NOTHING, null=True)
     title = models.CharField(max_length=255)
