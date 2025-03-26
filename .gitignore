@@ -1,6 +1,7 @@
-.venv
-migrations
-db.sqlite3
 blog/__pycache__
 web/__pycache__
 hifitechsolns/__pycache__
+.venv
+blog/migrations
+web/migrations
+db.sqlite3
