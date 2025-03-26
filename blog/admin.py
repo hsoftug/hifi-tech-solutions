@@ -10,6 +10,7 @@ class TagAdmin(admin.ModelAdmin):
     search_fields = ("name",)
 
 
+
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ("id", "name")

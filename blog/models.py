@@ -2,9 +2,11 @@ from django.db import models
 from django_ckeditor_5.fields import CKEditor5Field
 
 
-# Create your models here.
 class Tag(models.Model):
     name = models.CharField(max_length=255)
+
+    class Meta: 
+        verbose_name_plural = "Tags"
 
     def __str__(self):
         return self.name
@@ -12,6 +14,9 @@ class Tag(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=255)
+
+    class Meta: 
+        verbose_name_plural = "Categories"
 
     def __str__(self):
         return self.name

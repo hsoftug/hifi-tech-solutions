@@ -6,11 +6,11 @@
 {% endblock %}
 
 {% block content %}
-  <!--   MAIN WRAPPER
-    ==================================================   -->
+  <!--  MAIN WRAPPER
+    ==================================================  -->
   <div class="main-wrapper">
-    <!--   HEADER
-        ==================================================   -->
+    <!--  HEADER
+        ==================================================  -->
     <header class="header-style1 menu_area-light">
       <div class="navbar-default border-bottom border-color-light-white">
         <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
@@ -20,7 +20,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light p-0">
                   <div class="navbar-header navbar-header-custom">
                     <!-- start logo -->
-                    <a href="index.html" class="navbar-brand"><img id="logo" src="{% static 'img/logos/favcon.png' %}" alt="logo" /></a>
+                    <a href="index.html" class="navbar-brand"><img id="logo" src="img/logos/logo-inner.png" alt="logo" /></a>
                     <!-- end logo -->
                   </div>
 
@@ -151,111 +151,150 @@
       </div>
     </header>
 
-    <!--   PAGE TITLE
-        ==================================================   -->
+    <!--  PAGE TITLE
+        ==================================================  -->
     <section class="page-title-section top-position1 bg-secondary">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="text-center">
               <div class="position-relative">
-                <h1 class="display-2 font-weight-700 lh-1">Blog Grid</h1>
+                <h1 class="display-5 font-weight-700 lh-1">Delivering the best web design agency.</h1>
               </div>
               <ul>
                 <li>
                   <a href="index.html">Home</a>
                 </li>
-                <li>Blog Grid</li>
+                <li>Delivering the best web design agency.</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
       <div class="position-absolute top-0 left-0">
-        <img src="{% static 'img/bg/bg-shape-01.png' %}" alt="..." />
+        <img src="img/bg/bg-shape-01.png" alt="..." />
       </div>
       <div class="position-absolute bottom-0 end-0">
-        <img src="{% static 'img/bg/bg-shape-02.png' %}" alt="..." />
+        <img src="img/bg/bg-shape-02.png" alt="..." />
       </div>
     </section>
 
-    <!--   BLOG
-        ==================================================   -->
-    {% load static %}
-
-    <!-- BLOG SECTION -->
     <section>
-      <div class="container">
-        <div class="row gx-xxl-5 mt-n2-2">
-          {% for blog in object_list %}
-            <div class="col-md-6 col-lg-4 mt-2-2 wow fadeInUp" data-wow-delay="{{ forloop.counter0|add:1 }}00ms">
-              <article class="card card-style04 h-100">
-                <div class="card-img position-relative bg-secondary">
-                  {% if blog.cover_image %}
-                    <img src="{{ blog.cover_image.url }}" class="card-img-top" alt="{{ blog.title }}" style="height: 220px;" />
-                  {% else %}
-                    <img src="{% static 'img/bg/bg-shape-02.png' %}" class="card-img-top" alt="No Image Available" style="max-height: 220px;" />
-                  {% endif %}
-                  <a href="#!" class="category">{{ blog.category.name }}</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <article class="card card-style04 h-auto">
+                        <div class="card-img position-relative">
+                            <img src="{{ object.image.url }}" alt="{{ object.title }}">
+                        </div>
+                        <div class="card-body p-1-9 pt-2-3">
+                            <ul class="entry-meta list-unstyled mb-3">
+                                <li class="me-3 my-1"><i class="far fa-calendar me-2"></i>{{ object.created_at|date:"M d, Y" }}</li>
+                                <li class="me-3 my-1"><i class="fas fa-comment me-1 text-primary"></i> {{ comments.count }} Comments</li>
+                                <li class="my-1"><i class="far fa-user me-2"></i><a href="#!">{{ object.author }}</a></li>
+                            </ul>                                
+                            <p>{{ object.content }}</p>
+    
+                            <h3 class="mb-3">Related Tags:</h3>
+                            <div class="blog-tags mt-n2">
+                                {% for tag in tags %}
+                                    <a href="">{{ tag.name }}</a>
+                                {% endfor %}
+                            </div>
+    
+                            <h3 class="h4 mb-1-9 text-primary">{{ comments.count }} Comments</h3>
+                            {% for comment in comments %}
+                                <div class="d-flex border-bottom border-color-light-black pb-4 mb-5">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{ comment.user.profile_picture.url }}" alt="{{ comment.user.username }}" class="rounded">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h6 mb-2">{{ comment.user.username }}</h4>
+                                        <p>{{ comment.content }}</p>
+                                        <a class="comment-reply-link" href="#!">Reply</a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+    
+                            <h3 class="h4 mb-1-9 text-primary">Leave a reply</h3>
+                            <form method="post" action="">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="form-group">
+                                        <textarea name="reply" rows="6" class="form-control h-100" placeholder="Your Reply"></textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn-style1"><span>Leave a Reply</span></button>
+                                </div>
+                            </form>
+                        </div>    
+                    </article>                        
                 </div>
-                <div class="card-body p-2-0 p-xl-2-4">
-                  <span class="text-primary mb-2 d-block font-weight-500">{{ blog.date_published|date:'M d, Y' }}</span>
-                  <h3 class="h4 mb-0"><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a></h3>
-                </div>
-                <div class="card-footer bg-white px-2-0 px-xl-2-4 py-3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                      <span class="font-weight-600"><i class="ti-user me-2"></i></span>
-                      <a href="#!">Admin</a>
+    
+                <div class="col-lg-4">
+                    <div class="sidebar ps-xl-1-9">
+                        <div class="widget mb-1-9">
+                            <h4 class="mb-1-9 text-primary h5">Recent Posts</h4>
+                            {% for post in recent_posts %}
+                                <div class="d-flex mb-4">
+                                    <div class="flex-shrink-0">
+                                        <img src="{{ post.image.url }}" alt="{{ post.title }}">
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <h4 class="h6"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
+                                        <span class="display-30">{{ post.created_at|date:"M d, Y" }}</span>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+    
+                        <div class="widget widget_categories mb-1-9">
+                            <h4 class="mb-1-9 text-primary h5">Categories</h4>
+                            <ul>
+                                {% for category in categories %}
+                                    <li class="cat-item">
+                                        <a href="">
+                                            <span class="cat-name">{{ category.name }}</span>
+                                            <span class="float-end cat-count">({{ category.blogpost_set.count }})</span>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+    
+                        <div class="widget mb-1-9">                                
+                            <h4 class="mb-1-9 text-primary h5">Tags</h4>
+                            <div class="blog-tag mt-n2">
+                                {% for tag in tags %}
+                                    <a href="">{{ tag.name }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+    
+                        <div class="widget">
+                            <h4 class="mb-1-9 text-primary h5">Follow Us</h4>
+                            <ul class="social-icon-style2">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </article>
             </div>
-          {% empty %}
-            <p>No blog posts available.</p>
-          {% endfor %}
         </div>
-
-        <!-- PAGINATION -->
-        {% if is_paginated %}
-          <div class="pagination mt-4">
-            <ul class="pagination justify-content-center">
-              {% if page_obj.has_previous %}
-                <li class="page-item">
-                  <a class="page-link" href="?page=1">&laquo; First</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
-                </li>
-              {% endif %}
-
-              <li class="page-item active">
-                <span class="page-link">Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
-              </li>
-
-              {% if page_obj.has_next %}
-                <li class="page-item">
-                  <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="?page={{ page_obj.paginator.num_pages }}">Last &raquo;</a>
-                </li>
-              {% endif %}
-            </ul>
-          </div>
-        {% endif %}
-      </div>
     </section>
-
-    <!--   FOOTER
-        ==================================================   -->
+    
+    <!--  FOOTER
+        ==================================================  -->
     <footer class="bg-secondary pt-6 pt-lg-8 position-relative overflow-hidden">
       <div class="container">
         <div class="row mt-n2-9 pb-6 pb-lg-8">
           <div class="col-md-6 col-lg-5 mt-2-9 wow fadeIn" data-wow-delay="200ms">
             <div class="footer-logo mb-4">
-              <a href="index.html"><img src="{% static 'img/logos/footer-light-logo.png' %}" alt="..." /></a>
+              <a href="index.html"><img src="img/logos/footer-light-logo.png" alt="..." /></a>
             </div>
             <h4 class="text-white mb-1-9 fw-light w-lg-75 display-27 lh-base opacity8">We have been most trusted web design agency since 25+ years.</h4>
             <ul class="social-icon-style1">
@@ -310,7 +349,7 @@
               <h3 class="text-white h4 mb-1-9">Contacts</h3>
               <div class="d-flex mb-1-9">
                 <div class="flex-shrink-0">
-                  <img src="{% static 'img/icon/icon-phone.png' %}" alt="..." />
+                  <img src="img/icon/icon-phone.png" alt="..." />
                 </div>
                 <div class="flex-grow-1 ms-3">
                   <h4 class="mb-1 h5 text-white">Contact Us</h4>
@@ -319,7 +358,7 @@
               </div>
               <div class="d-flex">
                 <div class="flex-shrink-0">
-                  <img src="{% static 'img/icon/icon-mail.png' %}" alt="..." />
+                  <img src="img/icon/icon-mail.png" alt="..." />
                 </div>
                 <div class="flex-grow-1 ms-3">
                   <h4 class="mb-1 h5 text-white">Mail Us</h4>
