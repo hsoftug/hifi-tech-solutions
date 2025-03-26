@@ -1,0 +1,667 @@
+{% extends 'includes/base.html' %}
+
+{% load static %}
+
+{% block title %}
+  Hifi Tech Solutions | Home
+{% endblock %}
+
+{% block content %}
+  <!--    MAIN WRAPPER
+    ==================================================    -->
+  <div class="main-wrapper">
+    {% include 'includes/navbar.html' %}
+
+    <!--    BANNER
+        ==================================================    -->
+    <section class="bg-secondary top-position1 py-0 banner-style01 position-relative">
+      <div class="container position-relative z-index-9">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-lg-12">
+            <div class="mt-5 mt-sm-0 heading-animation animation-style2">
+              <h1 class="mb-sm-1-9 mb-lg-5 main-title text-uppercase text-white">We Create Quality Designs</h1>
+              <div class="row justify-content-center">
+                <div class="col-lg-5 order-2 order-lg-1">
+                  <div class="text-start text-lg-end">
+                    <a href="contact.html" class="btn-style1 white"><span>Get Started</span></a>
+                  </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2 mb-2-2 mb-lg-0">
+                  <div class="ps-lg-5 d-none d-sm-block">
+                    <p class="text-white opacity7 lead mb-0">We’re committed to providing customers exceptional service offering employees the best training.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute top-0 left-0">
+        <img src="{% static 'img/bg/bg-shape-01.png' %}" alt="..." />
+      </div>
+      <div class="position-absolute bottom-0 end-0">
+        <img src="{% static 'img/bg/bg-shape-02.png' %}" alt="..." />
+      </div>
+      <span class="banner-text ani-left-right">Solution</span>
+    </section>
+
+    <!--    SERVICES
+        ==================================================    -->
+    <section>
+      <div class="container">
+        <div class="heading-animation animation-style2">
+          <div class="position-relative text-end w-100">
+            <h6 class="border-bottom border-primary-color pb-1 d-inline-block"><a href="services.html" class="text-primary">All Services<i class="ti-arrow-right display-31 ps-2 align-middle"></i></a></h6>
+          </div>
+          <h2 class="title-font mb-1-9 display-3 font-weight-700 lh-1">Our Best Services</h2>
+        </div>
+        <div class="row mt-n1-9">
+          <div class="col-md-6 col-xl-3 mt-1-9">
+            <div class="card card-style02 position-relative z-index-9">
+              <div class="card-body p-0">
+                <h3><a href="web-development.html">Web Development</a></h3>
+                <img src="{% static 'img/icon/icon-01.png' %}" alt="..." class="mb-1-9" />
+                <p>Providing the solutions for your all business.</p>
+                <a href="web-development.html"><i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-1-9">
+            <div class="card card-style02 position-relative z-index-9">
+              <div class="card-body p-0">
+                <h3><a href="apps-development.html">Apps Development</a></h3>
+                <img src="{% static 'img/icon/icon-02.png' %}" alt="..." class="mb-1-9" />
+                <p>Providing the solutions for your all business.</p>
+                <a href="apps-development.html"><i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-1-9">
+            <div class="card card-style02 position-relative z-index-9">
+              <div class="card-body p-0">
+                <h3><a href="graphics-design.html">Graphics Design</a></h3>
+                <img src="{% static 'img/icon/icon-03.png' %}" alt="..." class="mb-1-9" />
+                <p>Providing the solutions for your all business.</p>
+                <a href="graphics-design.html"><i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3 mt-1-9">
+            <div class="card card-style02 position-relative z-index-9">
+              <div class="card-body p-0">
+                <h3><a href="digital-marketing.html">Digital Marketing</a></h3>
+                <img src="{% static 'img/icon/icon-04.png' %}" alt="..." class="mb-1-9" />
+                <p>Providing the solutions for your all business.</p>
+                <a href="digital-marketing.html"><i class="ti-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    ABOUT US
+        ==================================================    -->
+    <section class="about-style-02 pt-0">
+      <div class="container">
+        <div class="row align-items-xl-center mt-n2-9">
+          <div class="col-lg-6 mt-2-9">
+            <div class="left-content position-relative ps-sm-8 ps-xl-15">
+              <div class="wow image-effect">
+                <img src="{% static 'img/content/about-04.jpg' %}" alt="..." />
+              </div>
+              <div class="exp-box">
+                <span class="alt-font">30</span>
+                <h6>Years of Experience</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-2-9">
+            <div class="ps-lg-6 ps-xxl-10">
+              <div class="heading-animation animation-style2">
+                <div class="position-relative text-end w-100">
+                  <h6 class="border-bottom border-primary-color pb-1 d-inline-block"><a href="about.html" class="text-primary">About Us<i class="ti-arrow-right display-31 ps-2 align-middle"></i></a></h6>
+                </div>
+                <h2 class="title-font mb-1-9 display-3 font-weight-700 lh-1">Smart Web Design Agency</h2>
+              </div>
+              <p class="mb-1-9">Team is a diverse network of consultants and industry professionals with a global mindset and a collaborative culture. We work to understand your issues and are driven to ask better questions.</p>
+              <div class="progress-style2">
+                <div class="progress-text">
+                  <div class="row mb-2">
+                    <div class="col-6">Search Engine Optimization</div>
+                    <div class="col-6 text-end">89%</div>
+                  </div>
+                </div>
+                <div class="custom-progress progress mb-3">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:89%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" role="progressbar"></div>
+                </div>
+                <div class="progress-text">
+                  <div class="row mb-2">
+                    <div class="col-6">Marketing Strategy</div>
+                    <div class="col-6 text-end">75%</div>
+                  </div>
+                </div>
+                <div class="custom-progress progress">
+                  <div class="animated custom-bar progress-bar bg-secondary" style="width:75%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    PROCESS
+        ==================================================    -->
+    <section class="p-0 process-style-01">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-md-6 col-lg-4">
+            <div class="process-block">
+              <div class="process-img one">
+                <img src="{% static 'img/content/process-01.png' %}" alt="..." />
+              </div>
+              <div class="process-content">
+                <div class="content-inner heading-animation animation-style2">
+                  <h3 class="title-font">Plan &amp; Design</h3>
+                  <p class="text-white mb-1-9 mb-xl-2-6">We focus on the best practices for it solutions and services. When you need to start off an advertising campaign of a new product or service landing page.</p>
+                  <a href="about.html" class="text-white text-primary-hover">Read More <i class="ti-arrow-right display-31 ms-1 align-middle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="process-block">
+              <div class="process-img two">
+                <img src="{% static 'img/content/process-02.png' %}" alt="..." />
+              </div>
+              <div class="process-content">
+                <div class="content-inner heading-animation animation-style2">
+                  <h3 class="title-font">Project Testing</h3>
+                  <p class="text-white mb-1-9 mb-xl-2-6">We focus on the best practices for it solutions and services. When you need to start off an advertising campaign of a new product or service landing page.</p>
+                  <a href="about.html" class="text-white text-primary-hover">Read More <i class="ti-arrow-right display-31 ms-1 align-middle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="process-block">
+              <div class="process-img three">
+                <img src="{% static 'img/content/process-03.png' %}" alt="..." />
+              </div>
+              <div class="process-content">
+                <div class="content-inner heading-animation animation-style2">
+                  <h3 class="title-font">Got Results</h3>
+                  <p class="text-white mb-1-9 mb-xl-2-6">We focus on the best practices for it solutions and services. When you need to start off an advertising campaign of a new product or service landing page.</p>
+                  <a href="about.html" class="text-white text-primary-hover">Read More <i class="ti-arrow-right display-31 ms-1 align-middle"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    TEAM
+        ==================================================    -->
+    <section>
+      <div class="container">
+        <div class="heading-animation animation-style2">
+          <div class="position-relative text-end w-100">
+            <h6 class="border-bottom border-primary-color pb-1 d-inline-block"><a href="team.html" class="text-primary">All Members<i class="ti-arrow-right display-31 ps-2 align-middle"></i></a></h6>
+          </div>
+          <h2 class="title-font mb-1-9 display-3 font-weight-700 lh-1">Our Team Is Here</h2>
+        </div>
+        <div class="row g-xl-5 mt-n2-6">
+          <div class="col-md-6 col-lg-4 mt-2-6">
+            <div class="card card-style03 rounded-0 border-0 ms-5 position-relative">
+              <div class="position-relative">
+                <div class="wow image-effect">
+                  <img src="{% static 'img/team/team-01.jpg' %}" alt="..." />
+                </div>
+                <div class="team-content">
+                  <h5>Genet Osman</h5>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <span class="text-primary">Development</span>
+                <div class="team-icon mt-2">
+                  <a href="#!"><i class="ti-facebook"></i></a>
+                  <a href="#!"><i class="ti-instagram"></i></a>
+                  <a href="#!"><i class="ti-twitter-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-2-6">
+            <div class="card card-style03 rounded-0 border-0 ms-5 position-relative">
+              <div class="position-relative">
+                <div class="wow image-effect">
+                  <img src="{% static 'img/team/team-02.jpg' %}" alt="..." />
+                </div>
+                <div class="team-content">
+                  <h5>Ghenet Aziz</h5>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <span class="text-primary">Manager</span>
+                <div class="team-icon mt-2">
+                  <a href="#!"><i class="ti-facebook"></i></a>
+                  <a href="#!"><i class="ti-instagram"></i></a>
+                  <a href="#!"><i class="ti-twitter-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mt-2-6">
+            <div class="card card-style03 rounded-0 border-0 ms-5 position-relative">
+              <div class="position-relative">
+                <div class="wow image-effect">
+                  <img src="{% static 'img/team/team-03.jpg' %}" alt="..." />
+                </div>
+                <div class="team-content">
+                  <h5>Awate Asmara</h5>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <span class="text-primary">Programmer</span>
+                <div class="team-icon mt-2">
+                  <a href="#!"><i class="ti-facebook"></i></a>
+                  <a href="#!"><i class="ti-instagram"></i></a>
+                  <a href="#!"><i class="ti-twitter-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    FAQ'S
+        ==================================================    -->
+    <section class="pt-0 faq-style-01">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <div class="position-relative d-none d-lg-block">
+              <div class="rotate-text">
+                <h2 class="mb-1-9 display-3 font-weight-700 lh-1">FAQ</h2>
+              </div>
+            </div>
+            <div class="heading-animation animation-style2 d-lg-none">
+              <div class="position-relative text-end w-100">
+                <h6 class="border-bottom border-primary-color pb-1 d-inline-block"><a href="faq.html" class="text-primary">Faq's<i class="ti-arrow-right display-31 ps-2 align-middle"></i></a></h6>
+              </div>
+              <h2 class="title-font mb-1-9 display-3 font-weight-700 lh-1">Frequently Asked Questions</h2>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div id="accordion" class="accordion-style style1">
+              <div class="card mb-3">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0 main-font"><button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">1. Why we are best company ?</button></h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                  <div class="card-body">We are committed to providing our customers with exceptional service while offering our employees the best training. There are many variations of passages of lorem ipsum is simply free text.</div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0 main-font"><button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2. How the template process works ?</button></h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                  <div class="card-body">We are committed to providing our customers with exceptional service while offering our employees the best training. There are many variations of passages of lorem ipsum is simply free text.</div>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0 main-font"><button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3. What should be listed on a business card ?</button></h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                  <div class="card-body">We are committed to providing our customers with exceptional service while offering our employees the best training. There are many variations of passages of lorem ipsum is simply free text.</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0 main-font"><button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">4. How much does cost to design website ?</button></h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                  <div class="card-body">We are committed to providing our customers with exceptional service while offering our employees the best training. There are many variations of passages of lorem ipsum is simply free text.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    PORTFOLIO
+        ==================================================    -->
+    <section class="bg-secondary p-0">
+      <div class="container-fluid p-0">
+        <div class="portfolio portfolio-container mt-n5">
+          <div class="portfolio-wrap mt-5">
+            <div class="portfolio-item">
+              <div class="wow image-effect">
+                <img src="{% static 'img/portfolio/portfolio-01.jpg' %}" alt="..." />
+              </div>
+              <div class="cont d-flex align-items-end">
+                <div>
+                  <span class="text-primary">Dashboard</span>
+                  <h3 class="text-white h4"><a href="portfolio-details.html" class="text-white">Task Management</a></h3>
+                </div>
+                <div class="ms-auto">
+                  <h6 class="text-white">2023</h6>
+                </div>
+              </div>
+              <a href="portfolio-details.html" class="link-overlay"></a>
+            </div>
+          </div>
+          <div class="portfolio-wrap mt-5">
+            <div class="portfolio-item">
+              <div class="wow image-effect">
+                <img src="{% static 'img/portfolio/portfolio-02.jpg' %}" alt="..." />
+              </div>
+              <div class="cont d-flex align-items-end">
+                <div>
+                  <span class="text-primary">Technology</span>
+                  <h3 class="text-white h4"><a href="portfolio-details.html" class="text-white">App Integration</a></h3>
+                </div>
+                <div class="ms-auto">
+                  <h6 class="text-white">2021</h6>
+                </div>
+              </div>
+              <a href="portfolio-details.html" class="link-overlay"></a>
+            </div>
+          </div>
+          <div class="portfolio-wrap mt-5">
+            <div class="portfolio-item">
+              <div class="wow image-effect">
+                <img src="{% static 'img/portfolio/portfolio-03.jpg' %}" alt="..." />
+              </div>
+              <div class="cont d-flex align-items-end">
+                <div>
+                  <span class="text-primary">Branding</span>
+                  <h3 class="text-white h4"><a href="portfolio-details.html" class="text-white">Desktop Mockup</a></h3>
+                </div>
+                <div class="ms-auto">
+                  <h6 class="text-white">2023</h6>
+                </div>
+              </div>
+              <a href="portfolio-details.html" class="link-overlay"></a>
+            </div>
+          </div>
+          <div class="portfolio-wrap mt-5">
+            <div class="portfolio-item">
+              <div class="wow image-effect">
+                <img src="{% static 'img/portfolio/portfolio-04.jpg' %}" alt="..." />
+              </div>
+              <div class="cont d-flex align-items-end">
+                <div>
+                  <span class="text-primary">Business</span>
+                  <h3 class="text-white h4"><a href="portfolio-details.html" class="text-white">Market Research</a></h3>
+                </div>
+                <div class="ms-auto">
+                  <h6 class="text-white">2022</h6>
+                </div>
+              </div>
+              <a href="portfolio-details.html" class="link-overlay"></a>
+            </div>
+          </div>
+          <div class="portfolio-wrap mt-5">
+            <div class="portfolio-item">
+              <div class="wow image-effect">
+                <img src="{% static 'img/portfolio/portfolio-05.jpg' %}" alt="..." />
+              </div>
+              <div class="cont d-flex align-items-end">
+                <div>
+                  <span class="text-primary">Design</span>
+                  <h3 class="text-white h4"><a href="portfolio-details.html" class="text-white">Website Design</a></h3>
+                </div>
+                <div class="ms-auto">
+                  <h6 class="text-white">2022</h6>
+                </div>
+              </div>
+              <a href="portfolio-details.html" class="link-overlay"></a>
+            </div>
+          </div>
+          <div class="portfolio-wrap mt-5">
+            <div class="portfolio-item">
+              <div class="wow image-effect">
+                <img src="{% static 'img/portfolio/portfolio-06.jpg' %}" alt="..." />
+              </div>
+              <div class="cont d-flex align-items-end">
+                <div>
+                  <span class="text-primary">Graphics</span>
+                  <h3 class="text-white h4"><a href="portfolio-details.html" class="text-white">Digital Web</a></h3>
+                </div>
+                <div class="ms-auto">
+                  <h6 class="text-white">2020</h6>
+                </div>
+              </div>
+              <a href="portfolio-details.html" class="link-overlay"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    ANIMATION LINE
+        ==================================================    -->
+    <div class="p-0 marquee-section">
+      <div class="marquee">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="main-marq">
+                <div class="slide-har st1">
+                  <div class="box non-strok">
+                    <div class="item">
+                      <h4 class="d-flex align-items-center">
+                        <span>UI-UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center"><span>Web Development</span> <span class="fz-50 ml-50 stroke icon">*</span></h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center">
+                        <span>Digital Marketing</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center"><span>Product Design</span> <span class="fz-50 ml-50 stroke icon">*</span></h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center">
+                        <span>Mobile Solutions</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="box non-strok">
+                    <div class="item">
+                      <h4 class="d-flex align-items-center">
+                        <span>UI-UX Experience</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center"><span>Web Development</span> <span class="fz-50 ml-50 stroke icon">*</span></h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center">
+                        <span>Digital Marketing</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center"><span>Product Design</span> <span class="fz-50 ml-50 stroke icon">*</span></h4>
+                    </div>
+                    <div class="item">
+                      <h4 class="d-flex align-items-center">
+                        <span>Mobile Solutions</span>
+                        <span class="fz-50 ml-50 stroke icon">*</span>
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    CLIENTS
+        ==================================================    -->
+    <section class="bg-light clients-style01 overflow-visible border-top border-bottom border-color-light-black">
+      <div class="container">
+        <div class="row mt-n2-9 d-flex justify-content-center align-items-center">
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-01.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-02.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-03.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-04.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-05.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-06.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-07.png' %}" alt="..." />
+            </div>
+          </div>
+          <div class="col-sm-4 col-lg-3 mt-2-9">
+            <div class="text-center clients-img">
+              <img src="{% static 'img/partners/partners-08.png' %}" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    BLOG
+        ==================================================    -->
+    <section>
+      <div class="container">
+        <div class="heading-animation animation-style2">
+          <div class="position-relative text-end w-100">
+            <h6 class="border-bottom border-primary-color pb-1 d-inline-block"><a href="blog-grid.html" class="text-primary">All Update<i class="ti-arrow-right display-31 ps-2 align-middle"></i></a></h6>
+          </div>
+          <h2 class="title-font mb-1-9 display-3 font-weight-700 lh-1">Our Recent Blog</h2>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <article class="card card-style01 border-0 rounded-0 border-top">
+              <div class="row p-1-6 p-lg-1-9 p-xl-5 align-items-center">
+                <div class="col-md-9">
+                  <div class="mb-1 mb-md-0">
+                    <h4 class="mb-4"><a href="blog-details.html">Delivering the best web design agency.</a></h4>
+                    <div>
+                      <a href="#!" class="text-uppercase ps-0 p-2 display-30">Design</a>
+                      <a href="#!" class="text-uppercase ps-0 p-2 display-30">App</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="text-start text-md-end">
+                    <span>20 October 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="bg-img blog-img secondary-overlay" data-overlay-dark="7" data-background="{% static 'img/blog/blog-01.jpg' %}">
+                  <div class="d-flex justify-content-center align-items-center h-100 position-relative z-index-9">
+                    <a href="blog-details.html" class="btn-style1 white"><span>Read More</span></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12">
+            <article class="card card-style01 border-0 rounded-0 border-top">
+              <div class="row p-1-6 p-lg-1-9 p-xl-5 align-items-center">
+                <div class="col-md-9">
+                  <div class="mb-1 mb-md-0">
+                    <h4 class="mb-4"><a href="blog-details.html">Basic rule of running web agency business.</a></h4>
+                    <div>
+                      <a href="#!" class="text-uppercase ps-0 p-2 display-30">Technology</a>
+                      <a href="#!" class="text-uppercase ps-0 p-2 display-30">Marketing</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="text-start text-md-end">
+                    <span>17 October 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="bg-img blog-img secondary-overlay" data-overlay-dark="7" data-background="{% static 'img/blog/blog-02.jpg' %}">
+                  <div class="d-flex justify-content-center align-items-center h-100 position-relative z-index-9">
+                    <a href="blog-details.html" class="btn-style1 white"><span>Read More</span></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-12">
+            <article class="card card-style01 border-0 rounded-0 border-top">
+              <div class="row p-1-6 p-lg-1-9 p-xl-5 align-items-center">
+                <div class="col-md-9">
+                  <div class="mb-1 mb-md-0">
+                    <h4 class="mb-4"><a href="blog-details.html">Over ride the digital divide with additional.</a></h4>
+                    <div>
+                      <a href="#!" class="text-uppercase ps-0 p-2 display-30">Agency</a>
+                      <a href="#!" class="text-uppercase ps-0 p-2 display-30">Developer</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="text-start text-md-end">
+                    <span>15 October 2023</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body p-0">
+                <div class="bg-img blog-img secondary-overlay" data-overlay-dark="7" data-background="{% static 'img/blog/blog-03.jpg' %}">
+                  <div class="d-flex justify-content-center align-items-center h-100 position-relative z-index-9">
+                    <a href="blog-details.html" class="btn-style1 white"><span>Read More</span></a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--    FOOTER
+        ==================================================    -->
+    {% include 'includes/footer.html' %}
+  </div>
+{% endblock %}
