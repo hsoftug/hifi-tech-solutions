@@ -1,0 +1,195 @@
+{% extends 'includes/base.html' %}
+
+{% load static %}
+
+{% block title %}
+  Hifi Tech Solutions | Home
+{% endblock %}
+
+{% block content %}
+  <!--     MAIN WRAPPER
+    ==================================================     -->
+  <div class="main-wrapper">
+    {% include 'includes/navbar.html' %}
+
+    <!--  PAGE TITLE
+        ==================================================  -->
+    <section class="page-title-section top-position1 bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <div class="position-relative">
+                <h1 class="display-2 font-weight-700 lh-1">Contact Us</h1>
+              </div>
+              <ul>
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute top-0 left-0">
+        <img src="{% static 'img/bg/bg-shape-01.png' %}" alt="..." />
+      </div>
+      <div class="position-absolute bottom-0 end-0">
+        <img src="{% static 'img/bg/bg-shape-02.png' %}" alt="..." />
+      </div>
+    </section>
+
+    <!--  CONTACT DETAIL
+        ==================================================  -->
+    <section class="contact-style01">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <div class="bg-img cover-background h-100" data-background="img/content/contact-img-01.jpg"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-data p-1-9 p-lg-8">
+              <div>
+                <div class="heading-animation animation-style2">
+                  <h2 class="title-font mb-1-6 mb-sm-1-9 display-5 font-weight-700">Contact</h2>
+                </div>
+                <address class="mb-2-9 display-29 display-md-28 display-xl-27 font-weight-700">
+                  New York — <br />66 Guild Street 512B, Great North Town.
+                </address>
+                <h5>(+44) 123 456 789</h5>
+                <h5 class="mb-1-6 mb-lg-2-3">info@example.com</h5>
+                <div class="contact-map-button">
+                  <a href="#!">
+                    <span class="main-content">
+                      <span class="map-icon"><i aria-hidden="true" class="fas fa-map-marker-alt"></i></span>
+                      <span class="map-text">View on map</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  CONTACT FORM
+        ==================================================  -->
+    <section class="pt-0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="border p-1-9 p-md-5">
+              <div class="heading-animation animation-style2">
+                <h2 class="title-font mb-1-6 mb-sm-1-9 display-5 font-weight-700">Get In Touch</h2>
+              </div>
+              <form class="contact quform" action="quform/contact.php" method="post" enctype="multipart/form-data" onclick="">
+                <div class="quform-elements">
+                  <div class="row">
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="quform-element form-group">
+                        <label for="name">Your Name <span class="quform-required">*</span></label>
+                        <div class="quform-input">
+                          <input class="form-control" id="name" type="text" name="name" placeholder="Your name here" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="quform-element form-group">
+                        <label for="email">Your Email <span class="quform-required">*</span></label>
+                        <div class="quform-input">
+                          <input class="form-control" id="email" type="text" name="email" placeholder="Your email here" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="quform-element form-group">
+                        <label for="subject">Your Subject <span class="quform-required">*</span></label>
+                        <div class="quform-input">
+                          <input class="form-control" id="subject" type="text" name="subject" placeholder="Your subject here" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="col-md-6">
+                      <div class="quform-element form-group">
+                        <label for="phone">Contact Number</label>
+                        <div class="quform-input">
+                          <input class="form-control" id="phone" type="text" name="phone" placeholder="Your phone here" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Textarea element -->
+                    <div class="col-md-12">
+                      <div class="quform-element form-group">
+                        <label for="message">Message <span class="quform-required">*</span></label>
+                        <div class="quform-input">
+                          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tell us a few words"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Textarea element -->
+
+                    <!-- Begin Captcha element -->
+                    <div class="col-md-12">
+                      <div class="quform-element">
+                        <div class="form-group">
+                          <div class="quform-input">
+                            <input class="form-control" id="type_the_word" type="text" name="type_the_word" placeholder="Type the below word" />
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="quform-captcha">
+                            <div class="quform-captcha-inner">
+                              <img src="{% static 'quform/images/captcha/courier-new-light.png' %}" alt="..." />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Captcha element -->
+
+                    <!-- Begin Submit button -->
+                    <div class="col-md-12">
+                      <div class="quform-submit-inner">
+                        <button class="btn-style1" type="submit"><span>Send Message</span></button>
+                      </div>
+                      <div class="quform-loading-wrap text-start">
+                        <span class="quform-loading"></span>
+                      </div>
+                    </div>
+                    <!-- End Submit button -->
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  MAP
+        ==================================================  -->
+    <section class="p-0">
+      <div class="container-fuild">
+        <iframe class="contact-map" id="gmap_canvas" src="https://maps.google.com/maps?q=london&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </section>
+
+    <!--     FOOTER
+        ==================================================     -->
+    {% include 'includes/footer.html' %}
+  </div>
+{% endblock %}
