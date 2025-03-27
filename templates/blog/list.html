@@ -9,7 +9,7 @@
   <!--      MAIN WRAPPER
     ==================================================      -->
   <div class="main-wrapper">
-    {% includes '../includes/navbar.html' %}
+    {% include '../includes/navbar.html' %}
 
     <!--      PAGE TITLE
         ==================================================      -->
@@ -19,13 +19,13 @@
           <div class="col-md-12">
             <div class="text-center">
               <div class="position-relative">
-                <h1 class="display-2 font-weight-700 lh-1">Blog Grid</h1>
+                <h1 class="display-2 font-weight-700 lh-1">Blogs</h1>
               </div>
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="{% url 'home' %}">Home</a>
                 </li>
-                <li>Blog Grid</li>
+                <li>Blogs</li>
               </ul>
             </div>
           </div>

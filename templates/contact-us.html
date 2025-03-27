@@ -46,7 +46,7 @@
       <div class="container">
         <div class="row g-0">
           <div class="col-md-6">
-            <div class="bg-img cover-background h-100" data-background="img/content/contact-img-01.jpg"></div>
+            <div class="bg-img cover-background h-100" data-background="{% static 'img/content/contact-img.jpg' %}"></div>
           </div>
           <div class="col-md-6">
             <div class="contact-data p-1-9 p-lg-8">
@@ -55,10 +55,10 @@
                   <h2 class="title-font mb-1-6 mb-sm-1-9 display-5 font-weight-700">Contact</h2>
                 </div>
                 <address class="mb-2-9 display-29 display-md-28 display-xl-27 font-weight-700">
-                  New York — <br />66 Guild Street 512B, Great North Town.
+                  Entebbe — <br />66 Kawuku Namulanda 512B, Off Etb Road.
                 </address>
-                <h5>(+44) 123 456 789</h5>
-                <h5 class="mb-1-6 mb-lg-2-3">info@example.com</h5>
+                <h5>(+256) 708 871 292</h5>
+                <h5 class="mb-1-6 mb-lg-2-3">info@hifitechsolns.com</h5>
                 <div class="contact-map-button">
                   <a href="#!">
                     <span class="main-content">
@@ -76,115 +76,145 @@
 
     <!--  CONTACT FORM
         ==================================================  -->
-    <section class="pt-0">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="border p-1-9 p-md-5">
-              <div class="heading-animation animation-style2">
-                <h2 class="title-font mb-1-6 mb-sm-1-9 display-5 font-weight-700">Get In Touch</h2>
-              </div>
-              <form class="contact quform" action="quform/contact.php" method="post" enctype="multipart/form-data" onclick="">
-                <div class="quform-elements">
-                  <div class="row">
-                    <!-- Begin Text input element -->
-                    <div class="col-md-6">
-                      <div class="quform-element form-group">
-                        <label for="name">Your Name <span class="quform-required">*</span></label>
-                        <div class="quform-input">
-                          <input class="form-control" id="name" type="text" name="name" placeholder="Your name here" />
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Text input element -->
+        <section class="pt-0">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <div class="border p-1-9 p-md-5">
+                  <div class="heading-animation animation-style2">
+                    <h2 class="title-font mb-1-6 mb-sm-1-9 display-5 font-weight-700">Get In Touch</h2>
+                  </div>
+                  
 
-                    <!-- Begin Text input element -->
-                    <div class="col-md-6">
-                      <div class="quform-element form-group">
-                        <label for="email">Your Email <span class="quform-required">*</span></label>
-                        <div class="quform-input">
-                          <input class="form-control" id="email" type="text" name="email" placeholder="Your email here" />
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Text input element -->
-
-                    <!-- Begin Text input element -->
-                    <div class="col-md-6">
-                      <div class="quform-element form-group">
-                        <label for="subject">Your Subject <span class="quform-required">*</span></label>
-                        <div class="quform-input">
-                          <input class="form-control" id="subject" type="text" name="subject" placeholder="Your subject here" />
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Text input element -->
-
-                    <!-- Begin Text input element -->
-                    <div class="col-md-6">
-                      <div class="quform-element form-group">
-                        <label for="phone">Contact Number</label>
-                        <div class="quform-input">
-                          <input class="form-control" id="phone" type="text" name="phone" placeholder="Your phone here" />
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Text input element -->
-
-                    <!-- Begin Textarea element -->
-                    <div class="col-md-12">
-                      <div class="quform-element form-group">
-                        <label for="message">Message <span class="quform-required">*</span></label>
-                        <div class="quform-input">
-                          <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tell us a few words"></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Textarea element -->
-
-                    <!-- Begin Captcha element -->
-                    <div class="col-md-12">
-                      <div class="quform-element">
-                        <div class="form-group">
-                          <div class="quform-input">
-                            <input class="form-control" id="type_the_word" type="text" name="type_the_word" placeholder="Type the below word" />
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="quform-captcha">
-                            <div class="quform-captcha-inner">
-                              <img src="{% static 'quform/images/captcha/courier-new-light.png' %}" alt="..." />
+                  <!-- Alert Message Container -->
+                  <div id="alert-container"></div>
+        
+                  <!-- Django Form -->
+                  <form id="contactForm" class="contact">
+                    {% csrf_token %}
+                    <div class="quform-elements">
+                      <div class="row">
+                        
+                        <!-- Name Field -->
+                        <div class="col-md-6">
+                          <div class="quform-element form-group">
+                            <label for="{{ form.name.id_for_label }}">Your Name <span class="quform-required">*</span></label>
+                            <div class="quform-input">
+                              {{ form.name }}
                             </div>
                           </div>
                         </div>
+        
+                        <!-- Email Field -->
+                        <div class="col-md-6">
+                          <div class="quform-element form-group">
+                            <label for="{{ form.email.id_for_label }}">Your Email <span class="quform-required">*</span></label>
+                            <div class="quform-input">
+                              {{ form.email }}
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- Subject Field -->
+                        <div class="col-md-6">
+                          <div class="quform-element form-group">
+                            <label for="{{ form.subject.id_for_label }}">Your Subject <span class="quform-required">*</span></label>
+                            <div class="quform-input">
+                              {{ form.subject }}
+                            </div>
+                          </div>
+                        </div>
+        
+                        <!-- Message Field -->
+                        <div class="col-md-12">
+                          <div class="quform-element form-group">
+                            <label for="{{ form.message.id_for_label }}">Message <span class="quform-required">*</span></label>
+                            <div class="quform-input">
+                              {{ form.message }}
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div id="contact-us-preloader"></div>
+                        <!-- Submit Button -->
+                        <div class="col-md-12">
+                          <div class="quform-submit-inner">
+                            <button class="btn-style1" type="submit"><span>Send Message</span>
+                            </button>
+                          </div>
+                          <div class="quform-loading-wrap text-start">
+                            <span class="quform-loading"></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <!-- End Captcha element -->
-
-                    <!-- Begin Submit button -->
-                    <div class="col-md-12">
-                      <div class="quform-submit-inner">
-                        <button class="btn-style1" type="submit"><span>Send Message</span></button>
-                      </div>
-                      <div class="quform-loading-wrap text-start">
-                        <span class="quform-loading"></span>
-                      </div>
-                    </div>
-                    <!-- End Submit button -->
-                  </div>
+                  </form>
+        
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
+        
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contactForm");
+            const alertContainer = document.getElementById("alert-container");
+            
+            form.addEventListener("submit", function (event) {
+              event.preventDefault(); // Prevent default form submission
+              
+              const formData = new FormData(form);
+              const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+              const preloader = document.getElementById('contact-us-preloader')
+              
+              preloader.innerHTML = "<div class='spinner-border text-primary'></div>"
+
+              fetch("{% url 'contact-us' %}", {
+                method: "POST",
+                headers: {
+                  "X-CSRFToken": csrfToken,
+                },
+                body: formData,
+              })
+              .then(response => response.json())
+              .then(data => {
+
+                alertContainer.innerHTML = "";
+        
+                  const alertDiv = document.createElement("div");
+                  alertDiv.className = `alert ${data.status === "success" ? "alert-success" : "alert-danger"} alert-dismissible fade show`;
+                  alertDiv.role = "alert";
+                  alertDiv.innerHTML = `
+                  ${data.message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  `;
+                  alertContainer.appendChild(alertDiv);
+                  
+                  // Clear form fields if submission was successful
+                  if (data.status === "success") {
+                    form.reset();
+                    preloader.innerHTML = ''
+                  }
+                })
+                .catch(error => {
+                  console.error("Error:", error);
+                  preloader.innerHTML = ''
+                });
+                
+                // Empty the preloader
+              });
+              
+          });
+
+        </script>
+        
 
     <!--  MAP
         ==================================================  -->
     <section class="p-0">
       <div class="container-fuild">
-        <iframe class="contact-map" id="gmap_canvas" src="https://maps.google.com/maps?q=london&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe class="contact-map" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8060747725895!2d32.539238373958376!3d0.14195499985664503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d91bcddb3b8c7%3A0x12253af2bef9a47!2sKawuku!5e0!3m2!1sen!2sug!4v1743011349745!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 

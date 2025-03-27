@@ -102,7 +102,7 @@ body.loaded {
 
 a:hover,
 a:active {
-    color: #0048ff;
+    color: #007bff;
     text-decoration: none
 }
 
@@ -117,11 +117,11 @@ a:active {
 
 .text-primary,
 .text-primary-hover:hover {
-    color: #0048ff !important
+    color: #007bff !important
 }
 
 .bg-primary {
-    background-color: #0048ff !important
+    background-color: #007bff !important
 }
 
 .text-secondary,
@@ -134,7 +134,7 @@ a:active {
 }
 
 .border-primary-color {
-    border-color: #0048ff !important
+    border-color: #007bff !important
 }
 
 .form-control {
@@ -189,7 +189,7 @@ a:active {
     bottom: 20px;
     right: 20px;
     display: none;
-    background: #0048ff;
+    background: #007bff;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -233,7 +233,7 @@ a:active {
     font-family: 'themify';
     top: 0;
     font-size: 16px;
-    color: #0048ff
+    color: #007bff
 }
 
 .list-style2 {
@@ -262,7 +262,7 @@ a:active {
     left: 0;
     font-weight: 700;
     line-height: 35px;
-    color: #0048ff
+    color: #007bff
 }
 
 @media screen and (max-width: 1199px) {
@@ -374,7 +374,7 @@ a:active {
     left: 0;
     width: 18px;
     height: 2px;
-    background-color: #0048ff;
+    background-color: #007bff;
     transform: translateY(-50%)
 }
 
@@ -405,7 +405,7 @@ a:active {
 }
 
 .list-style7 li a:hover {
-    color: #0048ff
+    color: #007bff
 }
 
 @media screen and (max-width: 1399px) {
@@ -451,7 +451,7 @@ a:active {
     font-family: 'themify';
     width: 25px;
     height: 25px;
-    background-color: #0048ff;
+    background-color: #007bff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,7 +540,7 @@ a:active {
 
 .btn-style1:before {
     z-index: 1;
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .btn-style1 span {
@@ -611,7 +611,7 @@ a:active {
 
 .btn-style1.white:after {
     z-index: 0;
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .btn-style1.secondary {
@@ -630,7 +630,7 @@ a:active {
 
 .btn-style1.secondary:after {
     z-index: 0;
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .btn-style1.small {
@@ -671,7 +671,7 @@ a:active {
     transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
     text-transform: uppercase;
     font-size: 14px;
-    color: #0048ff
+    color: #007bff
 }
 
 .btn-style3:before {
@@ -721,7 +721,7 @@ a:active {
 
 .btn-style4 {
     display: inline-block;
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff !important;
     padding: 16px 30px;
     text-transform: uppercase;
@@ -747,7 +747,7 @@ a:active {
 
 .btn-style4.white:hover {
     background-color: #fff;
-    color: #0048ff !important
+    color: #007bff !important
 }
 
 .btn-style4.secondary {
@@ -755,7 +755,7 @@ a:active {
 }
 
 .btn-style4.secondary:hover {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .header-style1.scrollHeader .attr-nav>ul>li>a.btn-style4 {
@@ -763,7 +763,7 @@ a:active {
 }
 
 .header-style1.scrollHeader .attr-nav>ul>li>a.btn-style4:hover {
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff !important
 }
 
@@ -777,10 +777,10 @@ a:active {
     overflow: hidden !important;
     display: inline-block;
     text-align: center;
-    border: 2px solid #0048ff;
+    border: 2px solid #007bff;
     color: #fff;
     z-index: 1;
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .btn-style5:after {
@@ -803,7 +803,7 @@ a:active {
 .btn-style5:hover,
 .btn-style5:focus,
 .btn-style5:active {
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff
 }
 
@@ -826,7 +826,7 @@ a:active {
 
 .btn-style5.white {
     background-color: #fff;
-    color: #0048ff
+    color: #007bff
 }
 
 .btn-style5.white:hover {
@@ -870,9 +870,9 @@ a:active {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: #0048ff;
+    background: #007bff;
     color: #fff;
-    border: 2px solid #0048ff;
+    border: 2px solid #007bff;
     line-height: 1;
     font-weight: 800;
     position: relative;
@@ -920,11 +920,11 @@ a:active {
 .btn-style6.white {
     background: #fff;
     border: 2px solid #fff;
-    color: #0048ff !important
+    color: #007bff !important
 }
 
 .btn-style6.white:hover {
-    border: 2px solid #0048ff;
+    border: 2px solid #007bff;
     color: #fff !important
 }
 
@@ -932,7 +932,7 @@ a:active {
 .btn-style6.white:hover:after,
 .btn-style6.white:active:after,
 .btn-style6.white:focus:after {
-    background: #0048ff
+    background: #007bff
 }
 
 .btn-style6.medium {
@@ -944,9 +944,9 @@ a:active {
 }
 
 .header-style3.scrollHeader .attr-nav>ul>li>a.btn-style6 {
-    background: #0048ff;
+    background: #007bff;
     color: #fff !important;
-    border: 2px solid #0048ff
+    border: 2px solid #007bff
 }
 
 .header-style3.scrollHeader .attr-nav>ul>li>a.btn-style6:hover:after,
@@ -964,7 +964,7 @@ a:active {
     display: inline-block;
     text-transform: capitalize;
     text-align: center;
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff !important;
     font-size: 16px !important;
     font-weight: 700;
@@ -997,7 +997,7 @@ a:active {
 }
 
 .btn-style7:hover {
-    color: #0048ff !important
+    color: #007bff !important
 }
 
 .btn-style7.secondary {
@@ -1013,7 +1013,7 @@ a:active {
 
 .btn-style7.white {
     background-color: #ffffff;
-    color: #0048ff !important
+    color: #007bff !important
 }
 
 .btn-style7.white:hover {
@@ -1021,7 +1021,7 @@ a:active {
 }
 
 .btn-style7.white:before {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .btn-style7.md {
@@ -1033,7 +1033,7 @@ a:active {
 }
 
 .btn-style8 {
-    background-color: #0048ff;
+    background-color: #007bff;
     border: none;
     color: #fff;
     text-align: center;
@@ -1062,7 +1062,7 @@ a:active {
 .btn-style8.white:focus,
 .btn-style8.white:active {
     background: #fff;
-    color: #0048ff !important
+    color: #007bff !important
 }
 
 .btn-style8.small {
@@ -1081,7 +1081,7 @@ a:active {
 }
 
 .header-style1.scrollHeader .attr-nav>ul>li>a.btn-style8:hover {
-    background: #0048ff;
+    background: #007bff;
     color: #fff !important
 }
 
@@ -1171,7 +1171,7 @@ a:active {
 
 .navbar-nav li.current>a,
 .navbar-nav li.active>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .attr-nav>ul>li>a.butn {
@@ -1179,32 +1179,32 @@ a:active {
 }
 
 .navbar>ul>li.current>a:after {
-    border-color: transparent #0048ff #0048ff transparent
+    border-color: transparent #007bff #007bff transparent
 }
 
 .menu_area-light .navbar-nav li.current>a,
 .menu_area-light .navbar-nav li.active>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .menu_area-light .navbar>ul>li.current>a:after {
-    border-color: transparent #0048ff #0048ff transparent
+    border-color: transparent #007bff #007bff transparent
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.current>a:hover {
-    color: #0048ff
+    color: #007bff
 }
 
 .menu_area-light.scrollHeader .navbar-nav li.active>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .menu_area-light.scrollHeader .navbar>ul>li.current>a:after {
-    border-color: transparent #0048ff #0048ff transparent
+    border-color: transparent #007bff #007bff transparent
 }
 
 .header-style1 .attr-nav>ul>li>a.btn-style1 {
@@ -1221,66 +1221,66 @@ a:active {
 
     .menu_area-light .navbar ul ul li.active>a,
     .menu_area-light .navbar-nav li.has-sub a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .menu_area-light .navbar>ul>li.has-sub>a:hover:after {
-        border-color: #0048ff
+        border-color: #007bff
     }
 
     .menu_area-light.scrollHeader .navbar-nav>li.has-sub>a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2.scrollHeader .navbar-nav>li.has-sub>a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2.scrollHeader .navbar-nav>li.has-sub>a:hover:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 
     .header-style2 .navbar>ul>li.has-sub.current>a:hover:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 
     .header-style2.scrollHeader .navbar-nav li.current>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2.scrollHeader .navbar-nav li.current>a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2.scrollHeader .navbar>ul>li.current>a:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 
     .header-style2 .navbar ul ul li.active>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2 .navbar-nav li.has-sub a:hover,
     .header-style2 .navbar-nav li.has-sub a:active,
     .header-style2 .navbar-nav li.has-sub a:focus {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2 .navbar-nav li.current>a,
     .header-style2 .navbar-nav li.active>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2 .navbar>ul>li.has-sub>a:hover:after,
     .header-style2 .navbar>ul>li.has-sub>a:active:after,
     .header-style2 .navbar>ul>li.has-sub>a:focus:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 }
 
 @media screen and (max-width: 991px) {
     .header-style1 .navbar-toggler {
-        background: #0048ff
+        background: #007bff
     }
 
     .header-style1 .navbar-toggler:after {
@@ -1299,28 +1299,28 @@ a:active {
 }
 
 .header-style2 .navbar-nav li.current>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .header-style2 .navbar>ul>li.current>a:after {
-    border-color: transparent #0048ff #0048ff transparent
+    border-color: transparent #007bff #007bff transparent
 }
 
 .header-style2.scrollHeader .navbar-nav li.current>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .header-style2.scrollHeader .navbar-nav li.current>a:hover {
-    color: #0048ff
+    color: #007bff
 }
 
 .header-style2.scrollHeader .navbar>ul>li.current>a:after {
-    border-color: transparent #0048ff #0048ff transparent
+    border-color: transparent #007bff #007bff transparent
 }
 
 @media screen and (min-width: 992px) {
     .header-style2 .navbar ul ul li.active>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style2 .butn.secondary:before {
@@ -1334,7 +1334,7 @@ a:active {
     }
 
     .header-style2.scrollHeader .butn.secondary:before {
-        background: #0048ff
+        background: #007bff
     }
 
     .header-style2.scrollHeader .butn.secondary:hover,
@@ -1345,70 +1345,70 @@ a:active {
 }
 
 .header-style3 .navbar-nav li.current>a {
-    color: #0048ff
+    color: #007bff
 }
 
 .header-style3 .navbar-nav li.active>a {
-    color: #0048ff
+    color: #007bff
 }
 
 @media screen and (min-width: 992px) {
     .header-style3 .navbar-nav li.active>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3 .navbar-nav>li>a:hover,
     .header-style3 .navbar-nav>li>a:active,
     .header-style3 .navbar-nav>li>a:focus {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3 .navbar ul ul li.active>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3 .navbar-nav li.has-sub a:hover,
     .header-style3 .navbar-nav li.current>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3 .navbar-nav>li.has-sub>a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3 .navbar>ul>li.has-sub>a:hover:after,
     .header-style3 .navbar>ul>li.current>a:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 
     .header-style3.scrollHeader .navbar-nav>li.has-sub>a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3.scrollHeader .navbar>ul>li.has-sub>a:hover:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 
     .header-style3.scrollHeader .navbar-nav>li.active>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3.scrollHeader .navbar-nav li.current>a {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3.scrollHeader .navbar-nav li.current>a:hover {
-        color: #0048ff
+        color: #007bff
     }
 
     .header-style3.scrollHeader .navbar>ul>li.current>a:after {
-        border-color: transparent #0048ff #0048ff transparent
+        border-color: transparent #007bff #007bff transparent
     }
 }
 
 @media screen and (max-width: 991px) {
     .header-style3 .navbar-toggler {
-        background: #0048ff
+        background: #007bff
     }
 
     .header-style3 .navbar-toggler:after {
@@ -1559,7 +1559,7 @@ a:active {
     margin-right: 15px;
     width: 65px;
     height: 65px;
-    background-color: #0048ff;
+    background-color: #007bff;
     border-radius: 50%
 }
 
@@ -1692,13 +1692,13 @@ a:active {
 
 .slider-fade1 button.owl-prev:hover span,
 .slider-fade1 button.owl-next:hover span {
-    color: #0048ff;
+    color: #007bff;
     transition: .4s
 }
 
 .slider-fade1 button.owl-prev:hover span:before,
 .slider-fade1 button.owl-next:hover span:after {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .slider-fade2 .owl-nav button.owl-prev,
@@ -1731,7 +1731,7 @@ a:active {
 }
 
 .slider-fade2.owl-theme .owl-nav [class*='owl-']:hover i {
-    color: #0048ff
+    color: #007bff
 }
 
 .slider-fade2.owl-theme .owl-nav.disabled+.owl-dots {
@@ -1748,7 +1748,7 @@ a:active {
 
 .slider-fade2.owl-theme .owl-dots .owl-dot.active span,
 .slider-fade2.owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .slider-fade2 h1 {
@@ -1882,7 +1882,7 @@ a:active {
     content: "";
     font-weight: 700;
     vertical-align: middle;
-    background-color: #0048ff;
+    background-color: #007bff;
     width: 10px;
     padding: 0 5px 0 10px;
     height: 2px;
@@ -1951,7 +1951,7 @@ a:active {
     border-radius: 50rem;
     position: relative;
     border: 1px solid #dee2e6;
-    color: #0048ff;
+    color: #007bff;
     background: transparent
 }
 
@@ -1965,7 +1965,7 @@ a:active {
     height: 7px;
     border-radius: 7px;
     margin: -2px 8px 0 0;
-    background-color: #0048ff;
+    background-color: #007bff;
     display: inline-block;
     vertical-align: middle
 }
@@ -2194,7 +2194,7 @@ a:active {
     vertical-align: middle;
     left: 10px;
     bottom: 2px;
-    background-color: #0048ff;
+    background-color: #007bff;
     height: 1px;
     width: 33px
 }
@@ -2316,7 +2316,7 @@ a:active {
     vertical-align: middle;
     left: 10px;
     bottom: 2px;
-    background-color: #0048ff;
+    background-color: #007bff;
     height: 1px;
     width: 33px
 }
@@ -2385,7 +2385,7 @@ a:active {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 13px;
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .card-style04 .card-footer {
@@ -2442,7 +2442,7 @@ a:active {
 }
 
 .card-style06:hover .portfolio-btn {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .card-style06:hover .portfolio-btn .arrow-box {
@@ -2525,7 +2525,7 @@ a:active {
     margin: 15px 0;
     vertical-align: top;
     line-height: 1;
-    color: #0048ff
+    color: #007bff
 }
 
 .card-style07:hover .social-icons a {
@@ -2575,7 +2575,7 @@ a:active {
 }
 
 .card-style08 i {
-    color: #0048ff
+    color: #007bff
 }
 
 .card-style08:hover {
@@ -2645,7 +2645,7 @@ a:active {
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.8s ease-in-out;
     content: "";
-    background: #0048ff;
+    background: #007bff;
     position: absolute;
     left: 0;
     top: 0;
@@ -2865,7 +2865,7 @@ a:active {
     display: inline-block;
     vertical-align: top;
     line-height: 1;
-    color: #0048ff;
+    color: #007bff;
     border: none;
     font-size: 16px;
     -webkit-border-radius: 0;
@@ -2969,7 +2969,7 @@ a:active {
     transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
     text-transform: uppercase;
     font-size: 14px;
-    color: #0048ff
+    color: #007bff
 }
 
 .service-style01 .service-block a.service-btn:before {
@@ -3017,7 +3017,7 @@ a:active {
     position: relative;
     height: 80px;
     width: 80px;
-    background: #0048ff;
+    background: #007bff;
     text-align: center;
     display: inline-block;
     line-height: 80px;
@@ -3042,7 +3042,7 @@ a:active {
     top: 50%;
     height: 80px;
     width: 80px;
-    border: 2px solid #0048ff;
+    border: 2px solid #007bff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -3061,7 +3061,7 @@ a:active {
     top: 50%;
     height: 95px;
     width: 95px;
-    border: 2px solid #0048ff;
+    border: 2px solid #007bff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -3327,11 +3327,11 @@ a:active {
 
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-    border-color: #0048ff
+    border-color: #007bff
 }
 
 .lg-progress-bar .lg-progress {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .lg-backdrop.in {
@@ -3789,7 +3789,7 @@ a:active {
 }
 
 .prev-page .image-prev:after {
-    background-color: #0048ff;
+    background-color: #007bff;
     content: '';
     display: block;
     position: absolute;
@@ -3917,7 +3917,7 @@ a:active {
 }
 
 .next-page .image-next:after {
-    background-color: #0048ff;
+    background-color: #007bff;
     content: '';
     display: block;
     position: absolute;
@@ -4079,7 +4079,7 @@ a:active {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #0048ff
+    background-color: #007bff
 }
 
 .owl-carousel .owl-item img {
@@ -4102,7 +4102,7 @@ ul.resp-tabs-list {
     list-style: none;
     cursor: pointer;
     background: #fff;
-    color: #0048ff;
+    color: #007bff;
     text-align: left;
     border-radius: 0
 }
@@ -4129,7 +4129,7 @@ ul.resp-tabs-list {
 
 .resp-tabs-list li.resp-tab-active {
     margin-bottom: -1px;
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff
 }
 
@@ -4163,7 +4163,7 @@ h2.resp-accordion {
 
 h2.resp-tab-active {
     border-bottom: 0px solid #c1c1c1 !important;
-    background-color: #0048ff !important;
+    background-color: #007bff !important;
     color: #fff;
     margin-bottom: 0;
     border-radius: 0px
@@ -4223,7 +4223,7 @@ h2.resp-tab-title:last-child {
     z-index: 1;
     margin-right: -1px !important;
     padding: 18px 20px !important;
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff
 }
 
@@ -4381,7 +4381,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .accordion-style .btn-link {
-    color: #0048ff;
+    color: #007bff;
     line-height: 26px;
     position: relative;
     border: none;
@@ -4418,7 +4418,7 @@ h2.resp-accordion.resp-tab-active {
 .accordion-style .btn-link:active,
 .accordion-style .btn-link:focus {
     text-decoration: none;
-    color: #0048ff
+    color: #007bff
 }
 
 .accordion-style .btn-link.collapsed:after {
@@ -4446,7 +4446,7 @@ h2.resp-accordion.resp-tab-active {
     transform: none;
     top: 20px;
     position: absolute;
-    color: #0048ff;
+    color: #007bff;
     background-color: transparent;
     border-radius: .3rem;
     line-height: 22px;
@@ -4561,7 +4561,7 @@ h2.resp-accordion.resp-tab-active {
 
 .sidebar .widget .blog-tag a,
 .blog-tag a {
-    background-color: #0048ff;
+    background-color: #007bff;
     padding: 7px 12px;
     color: #fff;
     font-size: 14px;
@@ -4569,7 +4569,7 @@ h2.resp-accordion.resp-tab-active {
     margin: 0.6rem 5px 0 0;
     display: inline-block;
     vertical-align: top;
-    border: 1px solid #0048ff
+    border: 1px solid #007bff
 }
 
 .sidebar .widget .blog-tag a:hover,
@@ -4579,7 +4579,7 @@ h2.resp-accordion.resp-tab-active {
 .blog-tag a:active,
 .blog-tag a:focus {
     background-color: #fff;
-    color: #0048ff
+    color: #007bff
 }
 
 @media screen and (max-width: 1199px) {
@@ -4660,7 +4660,7 @@ h2.resp-accordion.resp-tab-active {
     line-height: 3;
     text-align: center;
     font-size: 20px;
-    background: #0048ff;
+    background: #007bff;
     color: #ffffff;
     border-top-left-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem
@@ -4763,7 +4763,7 @@ h2.resp-accordion.resp-tab-active {
 
 .pricing-style01 .pricing-block h6 {
     text-transform: uppercase;
-    color: #0048ff;
+    color: #007bff;
     font-size: 25px;
     margin-bottom: 0;
     padding: 28px 35px
@@ -5133,7 +5133,7 @@ h2.resp-accordion.resp-tab-active {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #0048ff;
+    background-color: #007bff;
     width: 430px;
     height: 180px;
     display: flex;
@@ -5280,7 +5280,7 @@ h2.resp-accordion.resp-tab-active {
     position: absolute;
     width: 50%;
     height: 18px;
-    background: #0048ff;
+    background: #007bff;
     top: 0;
     right: 0
 }
@@ -5463,7 +5463,7 @@ h2.resp-accordion.resp-tab-active {
 .testimonial-style01 .owl-carousel .owl-nav button.owl-next {
     width: 60px;
     height: 60px;
-    background: #0048ff;
+    background: #007bff;
     color: #fff;
     position: absolute;
     top: 40%
@@ -5490,8 +5490,8 @@ h2.resp-accordion.resp-tab-active {
 
 .testimonial-carousel-three.owl-theme .owl-dots .owl-dot.active span,
 .testimonial-carousel-three.owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #0048ff;
-    border: 1px solid #0048ff
+    background-color: #007bff;
+    border: 1px solid #007bff
 }
 
 .counter-style1 .counter-block {
@@ -5534,7 +5534,7 @@ h2.resp-accordion.resp-tab-active {
     top: 0;
     width: 0;
     height: 3px;
-    background-color: #0048ff;
+    background-color: #007bff;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease
@@ -5664,12 +5664,12 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .form-control:focus {
-    border-color: #0048ff
+    border-color: #007bff
 }
 
 .form-check-input:checked {
-    border-color: #0048ff;
-    background-color: #0048ff
+    border-color: #007bff;
+    background-color: #007bff
 }
 
 .quform-input {
@@ -5857,7 +5857,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .social-icon-style1 li a:hover {
-    background: #0048ff
+    background: #007bff
 }
 
 .social-icon-style1 li:last-child {
@@ -5889,7 +5889,7 @@ h2.resp-accordion.resp-tab-active {
 }
 
 .social-icon-style2 li a:hover {
-    background: #0048ff
+    background: #007bff
 }
 
 .social-icon-style3 {
@@ -5925,7 +5925,7 @@ h2.resp-accordion.resp-tab-active {
 .social-icon-style3 li a:hover,
 .social-icon-style3 li a:focus,
 .social-icon-style3 li a:active {
-    color: #0048ff;
+    color: #007bff;
     background: #fff
 }
 
@@ -5960,7 +5960,7 @@ h2.resp-accordion.resp-tab-active {
     font-size: 14px;
     text-align: center;
     color: #ffffff;
-    background: #0048ff;
+    background: #007bff;
     height: 38px;
     line-height: 38px;
     width: 38px
@@ -5969,32 +5969,32 @@ h2.resp-accordion.resp-tab-active {
 .social-icon-style4 li a:hover,
 .social-icon-style4 li a:focus,
 .social-icon-style4 li a:active {
-    color: #0048ff;
+    color: #007bff;
     background: #fff
 }
 
 .search-form_input {
-    color: #0048ff
+    color: #007bff
 }
 
 .search-frame h4 a:hover {
-    color: #0048ff
+    color: #007bff
 }
 
 .search-frame .search_list .match {
-    color: #0048ff
+    color: #007bff
 }
 
 .search-frame .search_list li:before {
-    color: #0048ff
+    color: #007bff
 }
 
 .search-frame .search_list li+li {
-    border-top: 3px solid #0048ff
+    border-top: 3px solid #007bff
 }
 
 .search-frame .search {
-    color: #0048ff
+    color: #007bff
 }
 
 .contact-map {
@@ -6014,9 +6014,9 @@ h2.resp-accordion.resp-tab-active {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    fill: #0048ff;
-    color: #0048ff;
-    background-color: #0048ff;
+    fill: #007bff;
+    color: #007bff;
+    background-color: #007bff;
     padding: 0px 0px 0px 0px;
     line-height: 37px
 }
@@ -6061,7 +6061,7 @@ h2.resp-accordion.resp-tab-active {
     order: 10;
     display: inline-block;
     text-decoration: inherit;
-    color: #0048ff
+    color: #007bff
 }
 
 .contact-style01 .contact-map-button a:focus {
@@ -6076,7 +6076,7 @@ h2.resp-accordion.resp-tab-active {
     width: 32px;
     height: 32px;
     line-height: 30px;
-    background-color: #0048ff;
+    background-color: #007bff;
     color: #fff;
     text-indent: 0;
     transition: width 0.3s ease-out 0.1s, height 0.3s ease-out 0.1s, background-color 0.4s ease-out, text-indent 0.3s ease-in 0.2s
@@ -6119,7 +6119,7 @@ footer .email a:focus:after {
 footer .email a:hover,
 footer .email a:active,
 footer .email a:focus {
-    color: #0048ff
+    color: #007bff
 }
 
 footer .email a:after {
@@ -6147,7 +6147,7 @@ footer .phone a {
 footer .phone a:hover,
 footer .phone a:active,
 footer .phone a:focus {
-    color: #0048ff
+    color: #007bff
 }
 
 @media screen and (max-width: 767px) {
@@ -6162,7 +6162,7 @@ footer .phone a:focus {
     position: fixed;
     top: 150px;
     right: -89px;
-    background: #0048ff;
+    background: #007bff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 9999
 }
@@ -6188,7 +6188,7 @@ footer .phone a:focus {
     transition-timing-function: ease-in-out;
     transition-duration: .2s;
     right: 0px;
-    background: #0048ff
+    background: #007bff
 }
 
 .all-demo:hover {

@@ -45,7 +45,7 @@
     });
 
 
-    $window.on("scroll", function () { var o = $window.scrollTop(), r = $(".navbar-brand img"), a = $(".navbar-brand.logodefault img"); o <= 50 ? ($("header").removeClass("scrollHeader").addClass("fixedHeader"), r.attr("src", "/static/img/logos/logo-inner.png")) : ($("header").removeClass("fixedHeader").addClass("scrollHeader"), r.attr("src", "/static/img/logos/logo.png")), a.attr("src", "/static/img/logos/logo.png") });
+    $window.on("scroll", function () { var o = $window.scrollTop(), r = $(".navbar-brand img"), a = $(".navbar-brand.logodefault img"); o <= 50 ? ($("header").removeClass("scrollHeader").addClass("fixedHeader"), r.attr("src", "/static/img/logos/favcon.png")) : ($("header").removeClass("fixedHeader").addClass("scrollHeader"), r.attr("src", "/static/img/logos/favcon.png")), a.attr("src", "/static/img/logos/favcon.png") });
 
     let elements = document.querySelectorAll(".navbar-nav > li > a");
 
